@@ -2,21 +2,23 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const name = 'Stella';
+  const age = 25;
+  const isFemale = true;
+  const student ={
+    name: 'Front-end'
+  };
+  
+
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          hello world!
+          hello {isFemale ? 'Ms.' : 'Mr.'} {name} - {age} years old!
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
